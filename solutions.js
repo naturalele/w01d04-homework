@@ -8,16 +8,16 @@
 
 // 2. Palindrom
 
-const checkPalindrome = (word) => {
-	let reverseString = word.split("").reverse("").join("")
-	if(word.toLowerCase() == reverseString.toLowerCase()) {
-		return true
-	} else {
-		return false
-	}
-}
+// const checkPalindrome = (word) => {
+// 	let reverseString = word.split("").reverse("").join("")
+// 	if(word.toLowerCase() == reverseString.toLowerCase()) {
+// 		return true
+// 	} else {
+// 		return false
+// 	}
+// }
 
-console.log(checkPalindrome("Radar"));
+// console.log(checkPalindrome("Radar"));
 
 // How to use reverse.array functions (3 steps):
 // store variable in temp variable,
@@ -35,8 +35,7 @@ console.log(checkPalindrome("Radar"));
 // 	}
 // }
 
-
-// 
+ 
 
 // 3. Digit Sum
 
@@ -46,3 +45,18 @@ console.log(checkPalindrome("Radar"));
 // }
 
 // console.log(sumDigits(42));
+
+// 4. Pythagoras
+
+
+//5. Sum Array
+
+let sum = 0
+const sumArray = (arr) => {
+	for (i = 0; i < arr.length; i++) {
+		sum += arr[i]
+	}
+	return sum;
+}
+
+console.log(sumArray([1, 2, 3, 4, 5, 6]));
