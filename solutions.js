@@ -46,17 +46,64 @@
 
 // console.log(sumDigits(42));
 
-// 4. Pythagoras
+//4. Pythagorean
+
+// const calculateSide = (num1, num2) => {
+// return Math.sqrt(num1*num1 + num2*num2)
+// }
+// console.log(calculateSide(7,8));
 
 
 //5. Sum Array
 
-let sum = 0
-const sumArray = (arr) => {
-	for (i = 0; i < arr.length; i++) {
-		sum += arr[i]
+// let sum = 0
+// const sumArray = (arr) => {
+// 	for (i = 0; i < arr.length; i++) {
+// 		sum += arr[i]
+// 	}
+// 	return sum;
+// }
+
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+//6. Prime Numbers
+
+// const checkPrime = (input) => {
+// 	for (i = 2; i < input; i++) {
+// 		if (input % 1 == 0) {
+// 			return false; 
+// 			}
+// 		}
+// 			return true;
+// 	}
+		
+// 	// console.log(checkPrime(9));
+
+// const printPrimes = (input) => {
+// 	for (let i = 0; i < input; i++) {
+// 		if (checkPrime(i)) {
+// 			console.log(i);
+// 		}
+// }
+// }
+
+// printPrimes(97);
+
+// Insert Dash
+const insertDash = (num) {
+	let num = num.toString;
+	let dash = "";
+	{
+		for (i = 0; i < num.length; i++) {
+			if (num % 2 == 1)  && ((num[i] + 1) % 2 == 1)
+				dash += (num[i] "-")
+		}
+		return dash
 	}
-	return sum;
 }
 
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+console.log(insertDash(454793));
+
+
+	
+
